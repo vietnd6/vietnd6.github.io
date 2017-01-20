@@ -14,24 +14,14 @@
 </head>
 <body >
 <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '668018136714370',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=668018136714370";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 
 
 <div class="menutop">
@@ -40,7 +30,7 @@
 		<a class="navbar-brand" href="#"> <img src="images/logo.png" alt="Logo vietnd"></a>
 		<ul class="nav navbar-nav float-xs-right">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="about.html">Giới thiệu <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Kinh nghiệm</a>
@@ -75,12 +65,7 @@
  				</h1>
 
  				<div class="commentfacebook">
- 					 <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
+ 					<div class="fb-comments" data-href="https://vietnd6.github.io/" data-width="576" data-numposts="5"></div>
  				</div>
  			</div>
  		</div>
