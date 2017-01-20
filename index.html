@@ -2,7 +2,10 @@
 <html lang="en"><head>
 	<title> Nguyen Duc Viet - Frontend Design </title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<meta property="fb:app_id" content="{668018136714370}" />
+ 
 	<script type="text/javascript" src="vendor/bootstrap.js"></script>
  	<script type="text/javascript" src="1.js"></script>
 	<link rel="stylesheet" href="vendor/bootstrap.css">
@@ -10,6 +13,27 @@
  	<link rel="stylesheet" href="1.css">
 </head>
 <body >
+<div id="fb-root"></div>
+ 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '668018136714370',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 <div class="menutop">
@@ -19,7 +43,7 @@
 		<a class="navbar-brand" href="#"> <img src="images/logo.png" alt="Logo vietnd"></a>
 		<ul class="nav navbar-nav float-xs-right">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="about.html">Giới thiệu <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Kinh nghiệm</a>
@@ -41,6 +65,23 @@
 
  <div class="khoitt1">
  	
+ </div>
+
+
+ <div class="khoicomment">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-sm-12">
+ 				<h1 class="text-xs-center">
+ 					Phản hồi 
+ 				</h1>
+
+ 				<div class="commentfacebook">
+ 					<div class="fb-comments" data-href="https://vietnd6.github.io/" data-width="576" data-numposts="5"></div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
  </div>
 </body>
 </html>
