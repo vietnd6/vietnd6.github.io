@@ -1,5 +1,25 @@
 *{margin: 0; padding: 0;}
 
+.xuong:hover {
+    bottom: 4%;
+}
+
+.xuong:after {content: "";position: absolute;width: 4px;height: 8px;background: white;left: 50%;bottom: 67%;margin-left: -2px;}
+
+.xuong {
+    width: 40px;
+    height: 77px;
+    border: white solid 1px;
+    position: absolute;
+    left: 50%;
+    border-radius: 30px;
+    bottom: 2%;
+    margin-left: -20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 .khoittnho {
     margin-bottom: 55px;
 }
@@ -103,6 +123,7 @@ body,html {
 
 nav.navbar.navbar-light.bg-faded.navbar-fixed-top {
     background: white;
+    width: 104%;
 }
 
 a.nav-link {
@@ -125,8 +146,12 @@ nav.navbar.navbar-light.bg-faded {
     height: 100px;
 } 
 
-@media (max-width:576px){
+@media (max-width: 576px){
     * {}
+
+h2.tieudecap2.text-sm-left.text-xs-center {
+    margin-top: 25px;
+}
 
 .tt img {
     width: 203px;
@@ -146,7 +171,7 @@ ul.nav.navbar-nav.float-xs-right {
     width: 104%;
     /* position: relative; */
     /* left: -8px; */
-    padding: 10px 19px;
+    padding: 10px 34px;
     border-top: 1px solid #d8d8d8;
 }
 
