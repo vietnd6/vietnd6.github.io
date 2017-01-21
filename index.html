@@ -10,6 +10,25 @@
  	<link rel="stylesheet" href="1.css">
 </head>
  <body > 
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '668018136714370',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div class="menutop">
 
 	<nav class="navbar navbar-light bg-faded navbar-fixed-top">
@@ -157,6 +176,18 @@
  	</div>	
  </div>  	<!-- end edu  -->
 
-
+<div class="phanhoi">
+	<div class="container text-xs-center">	
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Phản hồi </h2>		
+			</div>
+			<div class="col-sm-8 push-sm-2">
+				<div class="fb-comments" data-href="https://vietnd6.github.io" data-numposts="5"></div>
+			</div>
+		</div>
+		
+	</div>
+</div>
  </body>
 </html>
